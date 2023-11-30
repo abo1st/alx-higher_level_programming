@@ -14,7 +14,8 @@ typedef struct listint_s
 {
 	int n;
 	struct listint_s *next;
-}	listint_t;
+	listint_t;
+}
 
 void free_listint(listint_t *head);
 int check_cycle(listint_t *list);
