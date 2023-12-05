@@ -1,11 +1,18 @@
 #!/usr/bin/python3
+def add_arg(argv):
+    nz = len(argv) - 1
+    if nz == 0:
+        print("{:d}".format(nz))
+        return
+    else:
+        iz = 1
+        addz = 0
+        while iz <= nz:
+            addz += int(argv[iz])
+            iz += 1
+        print("{:d}".format(addz))
+
 
 if __name__ == "__main__":
-    """This prints the addition of all the arguments."""
     import sys
-
-    total = 0
-    for i in range(len(sys.argv) - 1):
-        total += int(sys.argv[i + 1])
-    print("{}".format(total))
-
+    add_arg(sys.argv)
