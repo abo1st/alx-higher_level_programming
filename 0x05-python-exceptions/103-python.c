@@ -28,7 +28,7 @@ void print_python_list(PyObject *p)
 		return;
 	}
 
-	printfz("[*] Size of the Python List = %ld\n", sizez);
+	printf("[*] Size of the Python List = %ld\n", sizez);
 	printf("[*] Allocated = %ld\n", allocz);
 
 	for (iz = 0; iz < sizez; iz++)
@@ -73,7 +73,7 @@ void print_python_bytes(PyObject *p)
 	for (iz = 0; iz < sizez; iz++)
 	{
 		printf("%02hhx", bytes->ob_sval[iz]);
-		if (i == (size - 1))
+		if (iz == (sizez - 1))
 			printf("\n");
 		else
 			printf(" ");

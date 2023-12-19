@@ -10,6 +10,6 @@ def magic_calculation(a, b):
             else:
                 resultz += a ** b / izz
         except Exception:
-            result = b + a
+            resultz = b + a
             break
     return (resultz)
